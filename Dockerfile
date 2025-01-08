@@ -2,7 +2,7 @@ FROM ollama/ollama:latest
 
 RUN mkdir -p /root/.ollama/models
 
-COPY ./models/* /root/.ollama/models/
+COPY ./models /root/.ollama/models/
 
 
 EXPOSE 11434

@@ -42,6 +42,7 @@ jobs:
         sleep 5
         docker exec ollama \
           sh -c "ollama pull ${{ matrix.model }}"
+        sleep 1
         docker rm -f ollama
 
     # 构建新的镜像
